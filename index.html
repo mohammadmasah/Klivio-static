@@ -7,83 +7,92 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="#">
       <h1>
         <a href="index.html">
-          <img
-            src="assets/logo.png"
-            alt="Klivio - L'allié de votre progression"
-          />
+          <img src="assets/logo.png" alt="Logo de Klivio" class="header-logo" />
         </a>
       </h1>
-      <nav>
+
+      <nav class="main-nav">
         <ul>
-          <li><a href="#">Les formation</a></li>
+          <li><a href="#">Les formations</a></li>
         </ul>
       </nav>
-      <form action="search" method="get">
-        <input type="text" placeholder="Rechercher" />
 
-        <div class="#">
-          <a href="#" class="tin-connexion">Connexion</a>
-          <a href="#" class="btn-incription">Inscription</a>
-        </div>
+      <form action="/search" method="get" class="#">
+        <input
+          type="text"
+          placeholder="Rechercher"
+          aria-label="Rechercher sur le site"
+        />
+        <button type="submit">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
       </form>
+
+      <div class="#">
+        <a href="#" class="btn btn-connexion">Connexion</a>
+        <a href="#" class="btn btn-inscription">Inscription</a>
+      </div>
     </header>
     <!--end of =  header +logo+ les information + serach+ conction and registion-->
     <main>
-      <section class="#">
-        <h2>Klivio, l’allié de votre progression</h2>
-        <p>Les meilleures formations sur le développement personnel E</p>
-        <img src="assets/bg-header.png" alt="#" />
-        <button>En savoir plus</button>
+      <section class="hero">
+        <p>Klivio, l’allié de votre progression</p>
+        <p></p>
+        <p>Les meilleures formations sur le développement personnel</p>
+        <img src="assets/bg-header.png" alt="Illustration Klivio" />
+        <button class="btn btn-primary">En savoir plus</button>
       </section>
       <!--Hero img and button-->
       <section class="#">
-        <h3>Les formations populaires</h3>
+        <h2>Les formations populaires</h2>
         <div class="#">
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
-            <p>P arler en pub li c</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <p>Parler en public</p>
+            <ul>
+              <li>Sonia Lef è vre | Coach prise de parole</li>
+              <li>
+                Gagnez en aisance et captez votre Gagnez en aisance et captez
+                votre auditoire
+              </li>
+            </ul>
           </div>
           <!-- strat the fist-->
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
-            <p>P arler en pub li c</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <p>Gérer le stress</p>
+            <ul>
+              <li>Lucie Garnier | Formatrice</li>
+              <li>
+                Apprenez à rester serein face aux Apprenez à rester serein face
+                aux défis
+              </li>
+            </ul>
           </div>
           <!--secound-->
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
-            <p>P arler en pub li c</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <p>Résoudre les problèmes</p>
+            <ul>
+              <li>Thomas Rivière | Expert</li>
+              <li>Analysez, décidez et trouvez des solutions durables</li>
+            </ul>
           </div>
           <!--thered-->
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
-            <p>P arler en pub li c</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <p>Leadership positif</p>
+            <ul>
+              <li>Marc Nguyen | Consultant</li>
+              <li>Inspirez, motivez et fédérez votre équipe</li>
+            </ul>
           </div>
           <!--foured-->
           <button class="#">Voir plus de formation</button>
@@ -103,49 +112,59 @@
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
             <p>Mieux communiquer</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <ul>
+              <li>Sonia Lef è vre | Coach prise de parole</li>
+              <li>
+                Gagnez en aisance et captez votre Gagnez en aisance et captez
+                votre auditoire
+              </li>
+            </ul>
           </div>
           <!-- strat the fist-->
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
             <p>Maîtriser ses émotions</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <ul>
+              <li>Sonia Lef è vre | Coach prise de parole</li>
+              <li>
+                Gagnez en aisance et captez votre Gagnez en aisance et captez
+                votre auditoire
+              </li>
+            </ul>
           </div>
           <!--secound-->
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
             <p>Résoudre les problémes</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <ul>
+              <li>Sonia Lef è vre | Coach prise de parole</li>
+              <li>
+                Gagnez en aisance et captez votre Gagnez en aisance et captez
+                votre auditoire
+              </li>
+            </ul>
           </div>
           <!--thered-->
           <div>
             <img src="assets/img-course.png" alt="#" />
             <span class="#">15,99 €60€</span>
             <p>Leadership positif</p>
-            <p>Sonia Lef è vre | Coach prise de parole</p>
-            <p>
-              Gagnez en aisance et captez votre Gagnez en aisance et captez
-              votre auditoire
-            </p>
+            <ul>
+              <li>Sonia Lef è vre | Coach prise de parole</li>
+              <li>
+                Gagnez en aisance et captez votre Gagnez en aisance et captez
+                votre auditoire
+              </li>
+            </ul>
           </div>
           <!--foured-->
           <button class="#">Voir plus de formation</button>
           <!--buttoon for Les formations récentes-->
         </div>
+        <!--end of Div for Les formations récentes-->
+        <!--NOTE:⚠️I must put the img of star for evry one of elements⚠️-->
       </section>
       <!--end of the section Les formations récentes-->
       <!------------------------------------------------------------------------------------------------------->
@@ -186,15 +205,17 @@
         <div>
           <h5>Les avantages Klivio</h5>
           <div>
-            <p>Suivi de sa progression</p>
-            <p>Exercices et QCM pour la mise en pratique</p>
-            <p>Possibilité de télécharger/ imprimer les formations</p>
-            <p>Contenu qualitatif et vérifié</p>
-            <p>Suivi en autonomie, 24h/ 24 , 7j/ 7</p>
-            <p>
-              Espaces d’échanges dédiés pour poser ses questions sur les
-              formations
-            </p>
+            <ul>
+              <li>Suivi de sa progression</li>
+              <li>Exercices et QCM pour la mise en pratique</li>
+              <li>Possibilité de télécharger/ imprimer les formations</li>
+              <li>Contenu qualitatif et vérifié</li>
+              <li>Suivi en autonomie, 24h/ 24 , 7j/ 7</li>
+              <li>
+                Espaces d’échanges dédiés pour poser ses questions sur les
+                formations
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -207,19 +228,21 @@
 
           <div><img src="assets/become-author.png" alt="#" /></div>
           <div>
-            <p>Commission unique, au pourcentage sur les ventes</p>
-            <p>Mise en avant sur la plateforme</p>
-            <p>Contrôle total sur le cours : contenu, prix</p>
-            <p>
-              Fonctionnalités avancées : espace commentaires, possibilité de
-              créer des QCM, exercices, vidéos, téléchargement en PDF, suivi des
-              statistiques des ventes, gestion de codes promos, gestion de la
-              facturation, etc
-            </p>
-            <p>
-              Le professeur reste 100% propriétaire de sa formation et conserve
-              tous ses droits d’auteur
-            </p>
+            <ul>
+              <li>Commission unique, au pourcentage sur les ventes</li>
+              <li>Mise en avant sur la plateforme</li>
+              <li>Contrôle total sur le cours : contenu, prix</li>
+              <li>
+                Fonctionnalités avancées : espace commentaires, possibilité de
+                créer des QCM, exercices, vidéos, téléchargement en PDF, suivi
+                des statistiques des ventes, gestion de codes promos, gestion de
+                la facturation, etc
+              </li>
+              <li>
+                Le professeur reste 100% propriétaire de sa formation et
+                conserve tous ses droits d’auteur
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -269,31 +292,39 @@
       <!----------------------------------------------------------------------------------------------------->
     </main>
     <!-------------END OF MAIN---------------->
-    <footer>
-      <div>
-        <div><img src="assets/logo.png" alt="#" /></div>
-        <div>
-          <span>Mentions légales</span>
-          <ul>
-            <li>CGU</li>
-            <li>CGU</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-          </ul>
+    <footer class="main-footer">
+      <div class="footer-columns">
+        <div class="footer-col logo-col">
+          <img src="assets/logo.png" alt="Logo Klivio" class="footer-logo" />
+          <p>© Klivio - 2025</p>
         </div>
-        <div>
+
+        <address class="footer-col contact-col">
+          <span>Coordonnées</span>
           <ul>
             <li>1 place république, 75003 Paris</li>
             <li>01.02.03.04 .05</li>
             <li>contact@klivio.fr</li>
           </ul>
+        </address>
+
+        <nav class="footer-col legal-nav">
+          <span>Mentions légales</span>
+          <ul>
+            <li><a href="#">CGU</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col social-media">
+          <h3>Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
         </div>
-        <div>
-          <button>Connexion</button>
-          <button>Inscription</button>
-        </div>
-        <div><span>© Klivio - 2025</span> <span>Suivez - nous</span></div>
-        <!--Add logo of FB-Instgram- X- in-->
       </div>
     </footer>
   </body>
