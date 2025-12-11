@@ -9,9 +9,13 @@
   </head>
   <body>
     <header>
-      <a href="index.html">
+
+      <div class="topbar">
+        <a href="index.html" class="logo-link">
         <img src="assets/logo.png" alt="Logo de Klivio" class="headerlogo" />
-      </a>
+        </a>
+          <img src="assets/icones/hamburger.svg" alt="menu" class="hamburger">
+       </div>
 
       <nav class="navbar">
         <ul class="remove-point">
@@ -21,23 +25,24 @@
         </ul>
       </nav>
 
-      <form action="/search" method="get">
+      <form action="/search" method="get" class="serach-form">
         <input
           type="text"
           placeholder="Rechercher"
           aria-label="Rechercher sur le site"
         />
-        <button type="submit">
-         <img src="assets/icones/serche.svg" alt="">
+        <button type="submit" class="search-btn">
+         <img src="assets/icones/serche.svg" alt="search">
         </button>
       </form>
     </header>
     <!--end of =  header +logo+ les information + serach+ conction and registion-->
     <main>
       <section class="hero">
+        <img src="assets/bg-header.svg" alt="Illustration Klivio" class="hero-img"/>
         <h1>Klivio, l’allié de votre progression</h1>
         <p>Les meilleures formations sur le développement personnel </p>
-        <img src="assets/bg-header.png" alt="Illustration Klivio" />
+        
         <button class="btn btn-primary">En savoir plus</button>
       </section>
       <!--Hero img and button-->
