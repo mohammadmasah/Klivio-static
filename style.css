@@ -3,6 +3,12 @@
   margin: 0px;
   box-sizing: border-box;
 }
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 :root {
   font-size: 62.5%;
 }
@@ -43,8 +49,8 @@ header {
     width: 100%;
   }
 
-  ul {
-    display: none;
+  .remove-point {
+    display: none; /*⚠️this is for navbar desktop⚠️*/
   }
   .search-btn {
     display: none;
@@ -83,17 +89,163 @@ header {
     text-align: center;
     font-size: 2.5rem;
   }
-  .btn-primary{
+  .btn-primary {
     position: absolute;
-    padding: 1rem 1.5rem; 
-    border-radius: 1rem; 
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
     font-size: 1.5rem;
     text-align: center;
     border: 3px solid transparent;
     margin-top: 70vh;
     margin-left: 25vh;
     background-color: rgba(255, 255, 255, 1);
+  }
+  .popular-programs {
+    width: 100%;
+    height: 100%;
+    padding-left: 4rem;
+    margin-top: 3rem;
+  }
+  .artical-content {
+    width: 80%;
+  }
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 7rem;
+  }
+  .price {
+    position: absolute;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: rgba(21, 34, 55, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-left: 18rem;
+    margin-top: -2.5rem;
+    font-size: 1.5rem;
+  }
+  .lastprice {
+    font-size: 1rem;
+  }
+  h3 {
+    width: 120%;
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1.3rem;
+  }
+  .instructor {
+    font-size: 1.6rem;
+    margin-left: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .star-rate {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .p-artical {
+    margin-left: 1.3rem;
+    margin-bottom: 4rem;
+  }
+  .btn-secoundly {
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    background-color: rgba(21, 34, 55, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-left: 6rem;
+    border-color: aliceblue; /*cheak the border colors*/
+    margin-bottom: 3rem;
+  }
+  .info-recentes {
+    background-color: rgba(21, 34, 55, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  .last-price {
+    position: absolute;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-left: 18rem;
+    margin-top: -2.5rem;
+    font-size: 1.5rem;
+  }
+  .btn-theerndly {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+  }
+  .setRecentes {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .customerReviews {
+    width: 90%;
+    margin-left: 2rem;
+  }
+  h4 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .clientsPhoto {
+    margin-left: 10rem;
+    border-radius: 9rem;
+  }
+  .nameClients {
+    margin-top: 2rem;
+    text-align: center;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+  }
+  .ideeClients {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  h5 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
     
+  }
+  .theAdvantages {
+    width: 100%;
+    height: 172vh;
+    background-color: rgba(245, 245, 245, 1);
+    color: black;
+  }
+  .iconeAvantages {
+    width: 10;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3rem;
+  }
+  .listOfAvantages li {
+    width: 90%;
+    font-size: 1.9rem;
+    display: flex;
+  }
+  .avantagesPhoto {
+    width: 32rem;
+    height: 24rem;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+    
+  }
+  .createInfo{
+    height: 205vh;
+    background-color: rgba(68, 221, 138, 1);
+  }
+  .listCreateInfo li{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin: 2rem;
+
   }
 }
 @media only screen and (min-width: 601px) and (min-width: 768px) {
