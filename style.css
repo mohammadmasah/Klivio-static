@@ -278,7 +278,7 @@ header {
   }
   .ContactUs{
     width: 100%;
-    height: 123vh;
+    height: 118vh;
     background-color: rgba(255, 255, 255, 1);
   }
   .form{
@@ -323,7 +323,16 @@ header {
     width: 100%;
     height: 200vh;
     background-color:rgba(21, 34, 55, 1);
+    
   }
+  .KerlivioLogoInfooter{
+    margin-top: 10vh;
+}
+.footerLegal{
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  
+  
 }
 @media only screen and (min-width: 601px) and (min-width: 768px) {
   body {
