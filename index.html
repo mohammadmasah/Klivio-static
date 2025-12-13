@@ -274,7 +274,6 @@
       <!-------------------------------A PROPSE DE KLIVIO----------------------------->
       <section class="aboutKerlivio">
         <h5>À propos de Klivio</h5>
-        <div>
           <p class="pAbout">
               Chez Klivio, nous défendons des valeurs fondamentales qui
               définissent notre approche éducative. Nous nous engageons à
@@ -287,39 +286,42 @@
               d'une ducation enrichissante et équitable, guidant notre mission
               d'offrir des pportunités d'apprentissage de qualité
             </p>
-          <div><img src="assets/logo.png" alt="logo Klivio" /></div>
-        </div>
+          <div class="aboutKerlivioLogo"><img src="assets/logo.png" alt="logo Klivio" class="KerlivioLogo" /></div>
       </section>
       <!----end of the A PROPOSE DE KLIVIO-->
       <!---------------------------------------------------------------------------------------------------->
       <!------------Form(NOUS CONTACTER)----------------------->
-      <section>
-        <div>
-          <h2>NOUS CONTACTER</h2>
-          <div>
-            <form action="">
+      <section class="ContactUs">
+          <h5>NOUS CONTACTER</h5>
+          <div class="form">
+            <form>
               <label>
-                <input placeholder="nom" type="text" /><br>
+                <input placeholder="Nom" type="text" class="nameAndemail"/><br>
               </label>
-
               <label>
-                <input placeholder="email" type="text" id="" /><br />
+                <input placeholder="Email" type="text" class="nameAndemail"/><br />
               </label>
-              <textarea name="message" id="" rows="10" cols="30"></textarea>
-              <button type="submit">Envoyer</button>
+              <textarea placeholder="Votre message" rows="10" cols="30" class="textarea"></textarea><br>
+              <button type="submit" class="btn-fourthly">Envoyer</button>
             </form>
           </div>
-        </div>
+          <div class="greenLine"></div>
       </section>
       <!----------------------------------------------------------------------------------------------------->
     </main>
     <!-------------END OF MAIN---------------->
-    <footer class="main-footer">
+    <footer>
       <div class="footer-columns">
         <div class="footer-col logo-col">
           <img src="assets/logo.png" alt="Logo Klivio" class="footer-logo" />
-          <p>© Klivio - 2025</p>
-        </div>
+        </div>  
+        <nav class="footer-col legal-nav">
+          <h3>Mentions légales</h3>
+          <ul>
+            <li><a href="#">CGU</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
 
         <address class="footer-col contact-col">
           <h3>Coordonnées</h3>
@@ -330,16 +332,10 @@
           </ul>
         </address>
 
-        <nav class="footer-col legal-nav">
-          <h3>Mentions légales</h3>
-          <ul>
-            <li><a href="#">CGU</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        
         </nav>
 
-        <div class="footer-col social-media">
+        <div class="social-media">
           <h3>Suivez-nous</h3>
           <div class="social-icons">
             <ul>
