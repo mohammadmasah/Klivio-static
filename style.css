@@ -98,14 +98,12 @@ header {
     font-size: 2.5rem;
   }
   .btn-primary {
-    position: absolute;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
-    text-align: center;
     border: 3px solid transparent;
     margin-top: 70vh;
-    margin-left: 25vh;
+    margin-left: 18vh;
     background-color: rgba(255, 255, 255, 1);
   }
   .popular-programs {
@@ -222,7 +220,7 @@ header {
   }
   .theAdvantages {
     width: 100%;
-    height: 172vh;
+    height: 100vh;
     background-color: rgba(245, 245, 245, 1);
     color: black;
   }
@@ -244,7 +242,7 @@ header {
     margin-top: 2rem;
   }
   .createInfo {
-    height: 205vh;
+    height: 116vh;
     background-color: rgba(68, 221, 138, 1);
   }
   .listCreateInfo li {
@@ -258,7 +256,7 @@ header {
   }
   .aboutKerlivio {
     width: 100%;
-    height: 182vh;
+    height: 135vh;
     background-color: rgba(245, 245, 245, 1);
   }
   .pAbout {
@@ -278,11 +276,11 @@ header {
     width: 40vh;
     height: 17vh;
     margin-top: 28vh;
-    margin-left: 23vh;
+    margin-left: 4vh;
   }
   .ContactUs {
     width: 100%;
-    height: 118vh;
+    height: 86vh;
     background-color: rgba(255, 255, 255, 1);
   }
   .form {
@@ -308,7 +306,7 @@ header {
   }
   .btn-fourthly {
     width: 95%;
-    height: 10vh;
+    height: 5vh;
     margin-top: 5vh;
     border-radius: 2vh;
     border-color: rgba(68, 221, 138, 1);
@@ -322,7 +320,7 @@ header {
   }
   .set-footer {
     width: 100%;
-    height: 120vh;
+    height: 97vh;
     margin-top: 3vh;
     background-color: rgba(21, 34, 55, 1);
   }
