@@ -12,6 +12,11 @@ ol {
 :root {
   font-size: 62.5%;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
