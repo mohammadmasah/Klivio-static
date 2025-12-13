@@ -273,13 +273,13 @@ header {
   .aboutKerlivioLogo {
     position: relative;
     width: 100%;
-    height: 65vh;
+    height: 61vh;
     background-color: rgba(21, 34, 55, 1);
   }
   .KerlivioLogo {
     position: absolute;
-    width: 40vh;
-    height: 17vh;
+    width: 37vh;
+    height: 16vh;
     margin-top: 28vh;
     margin-left: 1vh;
   }
