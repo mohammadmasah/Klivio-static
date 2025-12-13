@@ -69,7 +69,7 @@ header {
   .hero {
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 47vh;
     background-image: url(assets/bg-header.svg);
     background-size: cover;
     background-position: center 90%;
@@ -88,12 +88,12 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-size: 4rem;
-    margin-top: 8vh;
+    margin-top: 2vh;
   }
   .hero-p {
     position: absolute;
     text-transform: uppercase;
-    margin-top: 43vh;
+    margin-top: 22vh;
     text-align: center;
     font-size: 2.5rem;
   }
@@ -102,14 +102,14 @@ header {
     border-radius: 1rem;
     font-size: 1.5rem;
     border: 3px solid transparent;
-    margin-top: 70vh;
+    margin-top: 36vh;
     margin-left: 18vh;
     background-color: rgba(255, 255, 255, 1);
   }
   .popular-programs {
     width: 100%;
     height: 100%;
-    padding-left: 4rem;
+    padding-left: 5rem;
     margin-top: 3rem;
   }
   .artical-content {
@@ -160,7 +160,7 @@ header {
     border-radius: 1rem;
     background-color: rgba(21, 34, 55, 1);
     color: rgba(255, 255, 255, 1);
-    margin-left: 6rem;
+    margin-left: 7rem;
     border-color: aliceblue; /*cheak the border colors*/
     margin-bottom: 3rem;
   }
@@ -215,12 +215,13 @@ header {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 2rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
     text-transform: uppercase;
   }
   .theAdvantages {
     width: 100%;
     height: 100vh;
+    margin-left: 0rem;
     background-color: rgba(245, 245, 245, 1);
     color: black;
   }
@@ -276,11 +277,11 @@ header {
     width: 40vh;
     height: 17vh;
     margin-top: 28vh;
-    margin-left: 4vh;
+    margin-left: 5vh;
   }
   .ContactUs {
     width: 100%;
-    height: 86vh;
+    height: 74vh;
     background-color: rgba(255, 255, 255, 1);
   }
   .form {
@@ -290,7 +291,7 @@ header {
     width: 95%;
     padding: 2.5vh;
     background-color: rgba(21, 34, 55, 1);
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     margin-top: 2vh;
   }
   input::placeholder {
@@ -314,13 +315,13 @@ header {
   }
   .greenLine {
     width: 100%;
-    height: 3vh;
+    height: 2vh;
     background-color: rgba(68, 221, 138, 1);
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
   .set-footer {
     width: 100%;
-    height: 97vh;
+    height: 73vh;
     margin-top: 3vh;
     background-color: rgba(21, 34, 55, 1);
   }
@@ -335,7 +336,7 @@ header {
   }
   h6 {
     text-align: center;
-    padding-top: 35vh;
+    padding-top: 32vh;
     color: aliceblue;
     font-size: 1.5rem;
   }
@@ -343,7 +344,7 @@ header {
     margin-right: 1rem;
   }
   .lastHeader {
-    margin-top: -12rem;
+    margin-top: -25rem;
   }
 }
 @media only screen and (min-width: 601px) and (min-width: 768px) {
