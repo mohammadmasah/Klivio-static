@@ -22,22 +22,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
-header {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background-color: rgba(21, 34, 55, 1);
-}
-.headerlogo {
-  width: 8.4rem;
-  height: 3.1rem;
-  margin-top: 2.5rem;
-  margin-left: 2.7rem;
-}
-.navbar {
-  white-space: 39rem;
-  height: 8rem;
-}
 .navbar a {
   text-decoration: none;
   padding: 0rem;
@@ -46,14 +30,33 @@ header {
 .remove-point {
   list-style-type: none;
 }
-.hamburger {
-  margin-left: 23rem;
-}
+
 @media only screen and (max-width: 600px) {
   body {
     width: 100%;
   }
-
+  header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(21, 34, 55, 1);
+  }
+  .navbar {
+    white-space: 39rem;
+    height: 8rem;
+  }
+  .headerlogo {
+    width: 8.4rem;
+    height: 3.1rem;
+    margin-top: 2.5rem;
+    margin-left: 2.7rem;
+  }
+  .hamburger {
+    margin-left: 23rem;
+  }
+  .header-actions {
+    display: none;
+  }
   .remove-point {
     display: none; /*⚠️this is for navbar desktop⚠️*/
   }
@@ -351,8 +354,139 @@ header {
     margin-top: -27rem;
   }
 }
-@media only screen and (min-width: 601px) and (min-width: 768px) {
+/*======================================================1024px=================================*/
+@media only screen and (min-width: 1024px) {
   body {
     width: 100%;
   }
+  .hamburger {
+    display: none;
+  }
+  header {
+    min-height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(21, 34, 55, 1);
+    padding: 0.5%;
+  }
+  .headerlogo {
+    width: 8.4rem;
+    min-height: 3.1rem;
+    margin-left: 9.8rem;
+  }
+  .header-actions button {
+    gap: 2rem;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+  }
+  .registrationBtn {
+    background: linear-gradient(
+      94.01deg,
+      rgba(68, 221, 138, 1),
+      rgba(21, 183, 226, 1)
+    );
+  }
+  .listIn {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+  }
+  .seracher {
+    background-color: rgba(21, 34, 55, 1);
+    border-radius: 0.5rem;
+    border-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    height: 4rem;
+    width: 35rem;
+
+    background-image: url(assets/icones/seracher.svg);
+    background-repeat: no-repeat;
+    background-position: 32rem center;
+  }
+  .seracher::placeholder {
+    color: rgba(255, 255, 255, 1);
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    background-image: url(assets/bg-header.png);
+    background: linear-gradient();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .minTaxt {
+    position: relative;
+    z-index: 2;
+    inset: 0;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+    color: rgba(21, 34, 55, 1);
+  }
+  .minTaxt p {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 1);
+  }
+  .btn-primary {
+    height: 4rem;
+    width: 13rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+  .underline {
+    text-decoration: none;
+    color: rgba(21, 34, 55, 1);
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      94.01deg,
+      rgba(68, 221, 138, 0.7),
+      rgba(21, 183, 226, 0.7)
+    );
+  }
+  h2 {
+    width: 100%;
+    height: 8rem;
+    margin-top: 5rem;
+    margin-left: 6rem;
+    font-size: 3.6rem;
+  }
+  .popular-programs {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 2rem;
+   width: 100%;
+   padding: 0 7rem;
+   margin-left: 2.6rem;
+  }
+  .btn-secoundly{
+    width: 25rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+    background-color: rgba(21, 34, 55, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    margin: 7rem auto 5rem auto;
+    display: block;
+  }
+  
 }

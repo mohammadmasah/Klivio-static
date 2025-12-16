@@ -8,51 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!--⚠️Google font⚠️-->
-  </head>
-  <body>
-    <header>
-
-      <div class="topbar">
+ <header>
+    <div class="topbar">
         <a href="index.html" class="logo-link">
-        <img src="assets/logo.png" alt="Logo de Klivio" class="headerlogo" />
+            <img src="assets/logo.png" alt="Logo de Klivio" class="headerlogo" />
         </a>
-          <img src="assets/icones/hamburger.svg" alt="menu" class="hamburger">
-       </div>
+        <img src="assets/icones/hamburger.svg" alt="menu" class="hamburger">
+    </div>
 
-      <nav class="navbar">
-        <ul class="remove-point">
-          <li><a href="" class="nav_info">Les formations</a></li>
-          <li><a href="" class="btn btn-connexion">Connexion</a></li>
-          <li><a href="" class="btn btn-inscription">Inscription</a></li>
-        </ul>
-      </nav>
+    <div class="header-center">
+        <nav class="navbar">
+            <ul class="remove-point navbarlist">
+                <li><a href="" class="nav_info listIn">Les formations</a></li>
+            </ul>
+        </nav>
+    </div>
+   <div class="header-center">
+        <form class="serach-form">
+            <input type="text" placeholder="Rechercher" aria-label="Rechercher sur le site" class="seracher"/>
+        </form>
+    </div>
 
-      <form action="/search" method="get" class="serach-form">
-        <input
-          type="text"
-          placeholder="Rechercher"
-          aria-label="Rechercher sur le site"
-        />
-        <button type="submit" class="search-btn">
-         <img src="assets/icones/serche.svg" alt="search">
-        </button>
-      </form>
-    </header>
+    <div class="header-actions">
+        <button>Connexion</button>
+        <button class="registrationBtn">Inscription</button>
+    </div>
+</header>
     <!--end of =  header +logo+ les information + serach+ conction and registion-->
     <main>
       <section class="hero">
-        <div>
-  <div class="overlay" style="background-color: rgba(21, 183, 226, 1); mix-blend-mode: screen;"></div>
+        <div class="overlay"></div>
+        
+        <div class="minTaxt">
         <h1>Klivio, l’allié de votre progression</h1>
         <p class="hero-p">Les meilleures formations sur le développement personnel </p>
-        </div>
-
-        <button class="btn-primary">En savoir plus</button>
+        
+        <button class="btn-primary"><a href="" class="underline">En savoir plus</a></button>
+      </div>
       </section>
       <!--Hero img and button-->
+      <h2>Les formations populaires</h2>
       <section class="popular-programs">
-        <h2>Les formations populaires</h2>
+        
 
 
        
@@ -117,8 +116,8 @@
           </article>
         </div>
         <!--end foured-->
-        <button class="btn-secoundly">Voir plus de formation</button>
-        </section>
+      </section>
+      <button class="btn-secoundly">Voir plus de formation</button>
           <!--buttoon for les information populaires-->
         <!--end of Div for les formation populaires-->
       <!--end of the section les information populaires-->
