@@ -78,6 +78,12 @@ body {
   .secoundLine {
     display: none;
   }
+  .theredline {
+    display: none;
+  }
+  .accessible{
+    display: none;
+  }
 
   /*⚠️this is for desktop⚠️*/
   /*.newAvantagesPhoto{
@@ -716,8 +722,6 @@ body {
     background: linear-gradient(90.01deg, #44dd8a 2.38%, #18a0fb 100%);
   }
   .set-footer {
-    display: flex;
-    justify-content: space-around;
     height: auto;
     width: 100%;
     background-color: rgba(21, 34, 55, 1);
@@ -733,7 +737,7 @@ body {
     justify-content: space-between;
     gap: 10rem;
     width: 100%;
-    height: auto;
+    height: 40vh;
     margin-top: 12rem;
     margin: auto;
     color: rgba(255, 255, 255, 1);
@@ -742,29 +746,54 @@ body {
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
-  .legal li{
+  .legal li {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 1rem;
   }
-  .footIcone{
+  .footIcone {
     width: 3rem;
     height: 3rem;
     flex-shrink: 0;
   }
-  .forButton{
+  .forButton {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  .test{
-    display: flex;
-    justify-content: right;
-    padding-left: 10rem;
 
+  .controlheight {
+    margin-top: 12rem;
   }
-  .social-media{
-    
+  .theredline {
+    border: none;
+    height: 0.3rem;
+    width: 90%;
+    margin: auto;
+    background: rgba(68, 221, 138, 1);
+  }
+  .controlForbutton {
+    margin-right: 7rem;
+  }
+  .social-media {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding-top: 2rem;
+    margin: auto;
+  }
+  .social-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  .social-text {
+    color: rgba(255, 255, 255, 1);
+    padding-top: 0.5rem;
+    margin-right: 2rem;
+  }
+  .accessible {
+    color: rgba(255, 255, 255, 1);
+    margin-right: auto;
   }
 }
