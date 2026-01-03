@@ -37,13 +37,10 @@ body {
   }
   header {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     background-color: rgba(21, 34, 55, 1);
-  }
-  .navbar {
-    white-space: 39rem;
-    height: 8rem;
+    padding-bottom: 2rem;
   }
   .headerlogo {
     width: 8.4rem;
@@ -55,6 +52,9 @@ body {
     margin-left: 23rem;
   }
   .header-actions {
+    display: none;
+  }
+  .hidden {
     display: none;
   }
   .remove-point {
@@ -75,9 +75,9 @@ body {
   .line {
     display: none;
   }
-  .secoundLine {
+  /*.secoundLine {
     display: none;
-  }
+  }*/
   .theredline {
     display: none;
   }
@@ -92,76 +92,99 @@ body {
   .hero {
     position: relative;
     width: 100%;
-    height: 47vh;
+    min-height: 60vh;
     background-image: url(assets/bg-header.svg);
     background-size: cover;
-    background-position: center 90%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(100deg, rgb(68, 221, 137), rgb(21, 144, 226));
+    inset: 0;
+    background: linear-gradient(
+      94.01deg,
+      rgba(68, 221, 138, 1),
+      rgba(21, 183, 226, 1)
+    );
+    opacity: 0.7;
+  }
+  .minTaxt {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 0.5rem;
   }
 
   h1 {
-    position: absolute;
+    position: static;
     text-transform: uppercase;
     text-align: center;
     font-size: 4rem;
-    margin-top: 4vh;
   }
   .hero-p {
-    position: absolute;
+    position: static;
     text-transform: uppercase;
-    margin-top: 22vh;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .btn-primary {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     font-size: 1.5rem;
     border: 3px solid transparent;
-    margin-top: 36vh;
-    margin-left: 14vh;
     background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 1rem;
   }
-  .popular-programs {
-    width: 100%;
-    height: 100%;
-    padding-left: 5rem;
-    margin-top: 3rem;
-  }
-  .artical-content {
-    width: 80%;
+  .underline {
+    text-decoration: none;
+    color: rgba(21, 34, 55, 1);
   }
   h2 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 2rem;
-    margin-right: 7rem;
+    margin-top: 2rem;
+  }
+  .popular-programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+  }
+  .public {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .artical-content {
+    width: 80%;
   }
   .price {
     position: absolute;
+    margin-left: 18rem;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
-    text-align: center;
     background-color: rgba(21, 34, 55, 1);
     color: rgba(255, 255, 255, 1);
-    margin-left: 18rem;
-    margin-top: -2.5rem;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
-  .lastprice {
-    font-size: 1rem;
-  }
+
   h3 {
     width: 100%;
     font-size: 2.5rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     padding-left: 1.3rem;
   }
@@ -179,28 +202,30 @@ body {
     margin-bottom: 4rem;
   }
   .btn-secoundly {
+    display: block;
+    margin: 0 auto;
     padding: 1rem 2.5rem;
     border-radius: 1rem;
     background-color: rgba(21, 34, 55, 1);
     color: rgba(255, 255, 255, 1);
-    margin-left: 7rem;
     border-color: aliceblue;
     margin-bottom: 3rem;
+  }
+  .underlne-sec {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
   }
   .info-recentes {
     background-color: rgba(21, 34, 55, 1);
     color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .last-price {
-    position: absolute;
-    padding: 1rem 1.5rem;
-    border-radius: 2rem;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    margin-left: 18rem;
-    margin-top: -2.5rem;
-    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(21, 34, 55, 1);
   }
   .btn-theerndly {
     background-color: rgba(255, 255, 255, 1);
@@ -209,6 +234,8 @@ body {
   .setRecentes {
     padding-top: 4rem;
     padding-bottom: 2rem;
+    width: 90%;
+    margin: 0 auto;
   }
   .customerReviews {
     width: 90%;
@@ -221,8 +248,14 @@ body {
     text-align: center;
   }
   .clientsPhoto {
-    margin-left: 10rem;
     border-radius: 9rem;
+  }
+  .photo-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
   .nameClients {
     margin-top: 2rem;
@@ -243,10 +276,13 @@ body {
   }
   .theAdvantages {
     width: 100%;
-    height: 84vh;
+    height: auto;
     margin-left: 0rem;
     background-color: rgba(245, 245, 245, 1);
     color: black;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
   }
   .iconeAvantages {
     width: 10;
@@ -258,21 +294,38 @@ body {
     width: 90%;
     font-size: 1.9rem;
     display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .avantageIconThree {
+    margin-bottom: 2.5rem;
+  }
+  .space {
+    margin-bottom: 4rem;
+  }
+  .avtg {
+    display: contents;
+  }
+  .avantagesPh {
+    order: 1;
+  }
+  .order {
+    order: 2;
   }
   .avantagesPhotoMobile {
     width: 32rem;
     height: 24rem;
-    margin-left: 3.5rem;
     margin-top: 2rem;
+    display: flex;
+    margin: 0 auto;
   }
   .createInfo {
-    height: 100vh;
     background-color: rgba(68, 221, 138, 1);
   }
   .listCreateInfo li {
     margin-top: 2rem;
     margin-left: 1.5rem;
-    margin: 2rem;
   }
   .fourthIcon {
     position: relative;
@@ -280,7 +333,7 @@ body {
   }
   .aboutKerlivio {
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-color: rgba(245, 245, 245, 1);
   }
   .headersize {
@@ -291,29 +344,42 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 1.8rem;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
   }
   .aboutKerlivioLogo {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 61vh;
+    min-height: 40vh;
     background-color: rgba(21, 34, 55, 1);
+    padding: 2rem;
   }
   .KerlivioLogo {
-    position: absolute;
-    width: 37vh;
-    height: 16vh;
-    margin-top: 28vh;
-    margin-left: 1vh;
+    max-width: 80%;
+    height: auto;
   }
   .ContactUs {
     width: 100%;
-    height: 68vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 1);
   }
-  .form {
-    margin-left: 5vh;
+  .formheader {
+    font-size: 3rem;
   }
+  .form-contorl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 1.5rem;
+  }
+
   .nameAndemail {
     width: 95%;
     padding: 2.5vh;
@@ -331,47 +397,86 @@ body {
   }
   textarea::placeholder {
     color: rgba(255, 255, 255, 1);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-family: "Montserrat", sans-serif;
   }
   .btn-fourthly {
     width: 95%;
     height: 5vh;
     margin-top: 5vh;
-    border-radius: 2vh;
-    border-color: rgba(68, 221, 138, 1);
+    border-radius: 1rem;
+    border: none;
     background-color: rgba(68, 221, 138, 1);
   }
-  .greenLine {
+  .secoundLine {
+    height: 1.5rem;
+    width: 100%;
+    background: rgba(68, 221, 138, 1);
+    margin-top: 3rem;
+    border: none;
+  }
+  /*.greenLine {
     width: 100%;
     height: 2vh;
     background-color: rgba(68, 221, 138, 1);
     margin-top: 5vh;
-  }
+  }*/
   .set-footer {
     width: 100%;
-    height: 76vh;
-    margin-top: 3vh;
+    height: auto;
     background-color: rgba(21, 34, 55, 1);
+  }
+  .headerAndlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
   }
   .KerlivioLogoInfooter {
     margin-top: 10vh;
+    width: 80%;
   }
   .legal {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .controlheight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 20rem;
+  }
+  .legalSecound {
     margin-top: 2vh;
     text-align: center;
     color: rgba(255, 255, 255, 1);
-    margin-bottom: -1.5rem;
   }
   h6 {
     text-align: center;
-    padding-top: 32vh;
     color: aliceblue;
     font-size: 1.5rem;
   }
-  .footIcone {
-    margin-right: 1rem;
+  .legalLlist li {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    text-align: left;
   }
-  .lastHeader {
-    margin-top: -27rem;
+  .footIconeLocation {
+    margin-left: 1rem;
+  }
+  .footIconeLocation + br {
+    display: none;
+  }
+  .telephone {
+    margin-right: 2rem;
   }
 }
 /*======================================================1024px=================================*/
@@ -403,6 +508,7 @@ body {
     width: 13rem;
     height: 4rem;
     border: none;
+    cursor: pointer;
   }
   .registrationBtn {
     background: linear-gradient(
@@ -417,12 +523,12 @@ body {
   }
   .seracher {
     background-color: rgba(21, 34, 55, 1);
+    border: 0.1rem solid;
     border-radius: 0.5rem;
     border-color: rgba(255, 255, 255, 1);
     color: rgba(255, 255, 255, 1);
     height: 4rem;
     width: 35rem;
-
     background-image: url(assets/icones/seracher.svg);
     background-repeat: no-repeat;
     background-position: 32rem center;
@@ -431,6 +537,7 @@ body {
     color: rgba(255, 255, 255, 1);
     padding-left: 1.5rem;
     font-size: 1.5rem;
+    border: none;
   }
   .hero {
     position: relative;
@@ -446,7 +553,7 @@ body {
     position: relative;
     z-index: 2;
     inset: 0;
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -468,10 +575,15 @@ body {
     border: none;
     background-color: rgba(255, 255, 255, 1);
     text-decoration: none;
+    cursor: pointer;
   }
   .underline {
     text-decoration: none;
     color: rgba(21, 34, 55, 1);
+  }
+  .underlne-sec {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
   }
   .overlay {
     position: absolute;
@@ -486,17 +598,20 @@ body {
     width: 100%;
     height: 7rem;
     margin-top: 4rem;
-    margin-left: 6rem;
+    margin-left: 4.6rem;
     font-size: 3.6rem;
   }
   .popular-programs {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
     width: 100%;
-    padding: 0 7rem;
-    margin-left: 2.6rem;
+  }
+  .p-artical {
+    width: 30rem;
   }
   .btn-secoundly {
     width: 25rem;
@@ -507,7 +622,9 @@ body {
     font-size: 1.5rem;
     margin: 7rem auto 5rem auto;
     display: block;
+    cursor: pointer;
   }
+
   .price {
     position: absolute;
     padding: 1rem 1.5rem;
@@ -522,6 +639,12 @@ body {
   }
   .artical-content {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .star-rate {
+    width: 11rem;
   }
   .info-recentes {
     padding-top: 2rem;
@@ -541,6 +664,10 @@ body {
     height: auto;
     margin-bottom: 5rem;
   }
+  .bold {
+    font-weight: bold;
+  }
+
   h4 {
     text-align: center;
     padding-top: 3rem;
@@ -577,9 +704,10 @@ body {
   .avtg {
     display: block;
     padding-left: 5rem;
-    width: 60%;
+    width: 50%;
     margin-top: 5rem;
   }
+
   .avantagesPh {
     width: 72rem;
     height: 47rem;
@@ -594,14 +722,28 @@ body {
     font-size: 2.4rem;
     width: auto;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     display: flex;
     align-items: flex-end;
   }
-  .iconeAvantages {
+  /*.iconeAvantages {
     margin-right: 2rem;
     margin-right: 2rem;
-    margin-top: -1rem;
+    
+  }*/
+  .avantageItem {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .avantageIconThree {
+    margin-bottom: 2.2rem;
+  }
+  .avantgeFirstPh {
+    width: 72rem;
+    height: 47rem;
+    margin-top: 5rem;
+    margin-right: 5rem;
   }
   .createInfo {
     background-color: rgba(68, 221, 138, 1);
@@ -618,7 +760,7 @@ body {
     padding-left: 7rem;
   }
   .icon {
-    margin-bottom: 5.2rem;
+    margin-bottom: 11rem;
   }
   .headerAvtg {
     display: none;
@@ -630,7 +772,7 @@ body {
   }
   .headersize {
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
   }
   .pAbout {
@@ -672,7 +814,7 @@ body {
   .line {
     border: none;
     height: 0.2rem;
-    width: 15%;
+    width: 22%;
     background-color: rgba(68, 221, 138, 1);
     margin: 2rem auto 5rem auto;
   }
@@ -712,9 +854,10 @@ body {
     background-color: rgba(68, 221, 138, 1);
     border: none;
     border-radius: 1rem;
-    width: 20%;
+    width: 35%;
     height: 4rem;
     margin: auto;
+    cursor: pointer;
   }
   .secoundLine {
     height: 1.8rem;
@@ -758,11 +901,12 @@ body {
     flex-shrink: 0;
   }
   .forButton {
-    display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-
+  .header-actions {
+    display: flex;
+  }
   .controlheight {
     margin-top: 12rem;
   }
@@ -771,6 +915,7 @@ body {
     height: 0.3rem;
     width: 90%;
     margin: auto;
+    margin-top: 2rem;
     background: rgba(68, 221, 138, 1);
   }
   .controlForbutton {
@@ -782,6 +927,7 @@ body {
     width: 90%;
     padding-top: 2rem;
     margin: auto;
+    padding-bottom: 10rem;
   }
   .social-icons {
     display: flex;
