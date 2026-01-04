@@ -75,20 +75,12 @@ body {
   .line {
     display: none;
   }
-  /*.secoundLine {
-    display: none;
-  }*/
   .theredline {
     display: none;
   }
   .accessible {
     display: none;
   }
-
-  /*⚠️this is for desktop⚠️*/
-  /*.newAvantagesPhoto{
-    display: none;
-  }*/
   .hero {
     position: relative;
     width: 100%;
@@ -424,12 +416,6 @@ body {
     margin-top: 3rem;
     border: none;
   }
-  /*.greenLine {
-    width: 100%;
-    height: 2vh;
-    background-color: rgba(68, 221, 138, 1);
-    margin-top: 5vh;
-  }*/
   .set-footer {
     width: 100%;
     height: auto;
@@ -736,11 +722,6 @@ body {
     align-items: start;
     margin-bottom: 3rem;
   }
-  /*.iconeAvantages {
-    margin-right: 2rem;
-    margin-right: 2rem;
-    
-  }*/
   .avantageItem {
     display: flex;
     align-items: center;
