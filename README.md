@@ -46,5 +46,7 @@ Klivio-tailwind/
 * **GitHub**: [mohammadmasah](https://github.com/mohammadmasah)
 * **Live Demo**: [View Project Online](https://mohammadmasah.github.io/Klivio-static/)
 
+* **LinkedIn**:(www.linkedin.com/in/mohammad-masah)
+
 📄 License
 This project is open-source and available under the MIT License.
