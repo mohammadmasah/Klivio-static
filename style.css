@@ -168,6 +168,18 @@ body {
     position: relative;
   }
   .artical-content {
+    width: 85%;
+  }
+  .widthFirst {
+    width: 95%;
+  }
+  .widthSecound {
+    width: 79%;
+  }
+  .widthThreed {
+    width: 97%;
+  }
+  .widthFourth {
     width: 80%;
   }
   .price {
@@ -199,7 +211,7 @@ body {
   }
   .p-artical {
     margin-left: 1.3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   .btn-secoundly {
     display: block;
@@ -285,10 +297,8 @@ body {
     flex-direction: column;
   }
   .iconeAvantages {
-    width: 10;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 3rem;
+    width: 10%;
+    margin-left: 4%;
   }
   .listOfAvantages li {
     width: 90%;
@@ -297,9 +307,7 @@ body {
     gap: 2rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
-  }
-  .avantageIconThree {
-    margin-bottom: 2.5rem;
+    align-items: start;
   }
   .space {
     margin-bottom: 4rem;
@@ -327,10 +335,10 @@ body {
     margin-top: 2rem;
     margin-left: 1.5rem;
   }
-  .fourthIcon {
-    position: relative;
-    bottom: 4.5rem;
+  .avantageItem {
+    align-items: start;
   }
+
   .aboutKerlivio {
     width: 100%;
     height: auto;
@@ -451,7 +459,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    width: 20rem;
+    width: 21rem;
   }
   .legalSecound {
     margin-top: 2vh;
@@ -468,6 +476,7 @@ body {
     flex-direction: row;
     gap: 2rem;
     text-align: left;
+    align-items: start;
   }
   .footIconeLocation {
     margin-left: 1rem;
@@ -724,7 +733,8 @@ body {
     height: auto;
     margin-top: 1.5rem;
     display: flex;
-    align-items: flex-end;
+    align-items: start;
+    margin-bottom: 3rem;
   }
   /*.iconeAvantages {
     margin-right: 2rem;
@@ -734,10 +744,7 @@ body {
   .avantageItem {
     display: flex;
     align-items: center;
-    gap: 3rem;
-  }
-  .avantageIconThree {
-    margin-bottom: 2.2rem;
+    gap: 2rem;
   }
   .avantgeFirstPh {
     width: 72rem;
